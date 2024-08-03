@@ -20,6 +20,11 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
-        }      
+        }
+        stage('Complete 1st Branch') {
+            steps {
+                echo 'Complete 1st Branch'
+            }
+        }     
     }
 }
